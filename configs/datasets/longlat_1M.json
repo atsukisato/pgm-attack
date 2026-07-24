@@ -1,0 +1,7 @@
+{
+  "description": "Longlat: 1M contiguous keys sampled from longlat (position determined by seed)",
+  "name": "longlat_1M_uint64",
+  "path": "data/longlat_uint64",
+  "n": 1000000,
+  "type": "uint64"
+}

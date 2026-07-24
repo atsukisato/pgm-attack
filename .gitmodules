@@ -1,0 +1,9 @@
+[submodule "third_party/pgm-index"]
+	path = third_party/pgm-index
+	url = https://github.com/gvinciguerra/pgm-index.git
+[submodule "third_party/FITing-Tree"]
+	path = third_party/FITing-Tree
+	url = git@github.com:RKolla99/FITing-Tree.git
+[submodule "third_party/RadixSpline"]
+	path = third_party/RadixSpline
+	url = git@github.com:learnedsystems/RadixSpline.git

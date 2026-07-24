@@ -1,0 +1,7 @@
+{
+  "name": "wiki_ts_200M_uint64",
+  "type": "uint64",
+  "path": "data/wiki_ts_200M_uint64",
+  "description": "Wikipedia timestamps dataset (200M entries)",
+  "allow_duplicates": true
+}

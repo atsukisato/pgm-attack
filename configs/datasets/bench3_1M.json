@@ -1,0 +1,8 @@
+{
+  "description": "IoT: 1M contiguous keys sampled from bench3 (position determined by seed)",
+  "name": "bench3_1M_uint64",
+  "path": "data/bench3_uint64",
+  "n": 1000000,
+  "type": "uint64",
+  "allow_duplicates": true
+}

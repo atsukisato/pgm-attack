@@ -1,0 +1,7 @@
+add_executable(generate_poisons generate_poisons.cpp)
+target_include_directories(generate_poisons PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+target_link_libraries(generate_poisons PRIVATE pgm_common)
+
+add_executable(generate_poisons_segment_length generate_poisons_segment_length.cpp)
+target_include_directories(generate_poisons_segment_length PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+target_link_libraries(generate_poisons_segment_length PRIVATE pgm_common)

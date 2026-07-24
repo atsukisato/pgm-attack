@@ -1,0 +1,8 @@
+add_subdirectory(common)
+add_subdirectory(attack)
+add_subdirectory(attack_maxerror)
+add_subdirectory(pgm)
+add_subdirectory(radix_spline)
+add_subdirectory(fiting_tree)
+add_subdirectory(bound)
+add_subdirectory(tools)

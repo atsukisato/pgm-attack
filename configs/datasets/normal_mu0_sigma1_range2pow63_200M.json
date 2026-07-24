@@ -1,0 +1,6 @@
+{
+  "description": "N(μ=0, σ=1) scaled to [0,9223372036854775808) (200000000 entries)",
+  "name": "normal_mu0_sigma1_range2pow63_200M_uint64",
+  "path": "data/normal_mu0_sigma1_range2pow63_200M_uint64",
+  "type": "uint64"
+}

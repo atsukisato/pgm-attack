@@ -1,0 +1,7 @@
+{
+  "description": "Zipf(s=1) domain [1,200000000] (200000000 entries)",
+  "name": "zipf_s1_200M_uint64",
+  "path": "data/zipf_s1_200M_uint64",
+  "type": "uint64",
+  "allow_duplicates": true
+}

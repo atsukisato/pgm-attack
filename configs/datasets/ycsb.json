@@ -1,0 +1,6 @@
+{
+  "name": "ycsb_uint64",
+  "type": "uint64",
+  "path": "data/ycsb_uint64",
+  "description": "YCSB dataset (alex)"
+}

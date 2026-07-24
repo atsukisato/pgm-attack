@@ -1,0 +1,7 @@
+{
+  "name": "bench3_uint64",
+  "type": "uint64",
+  "path": "data/bench3_uint64",
+  "description": "IoT dataset (mgbench)",
+  "allow_duplicates": true
+}

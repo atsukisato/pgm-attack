@@ -1,0 +1,6 @@
+{
+  "name": "osm_cellids_800M_uint64",
+  "type": "uint64",
+  "path": "data/osm_cellids_800M_uint64",
+  "description": "OSM cell IDs dataset (800M entries)"
+}

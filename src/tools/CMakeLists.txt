@@ -1,0 +1,8 @@
+add_executable(generate_synthetic_dataset generate_synthetic_dataset.cpp)
+target_link_libraries(generate_synthetic_dataset PRIVATE pgm_common)
+
+add_executable(preprocess_mgbench preprocess_mgbench.cpp)
+target_link_libraries(preprocess_mgbench PRIVATE pgm_common)
+
+add_executable(preprocess_alex_dataset preprocess_alex_dataset.cpp)
+target_link_libraries(preprocess_alex_dataset PRIVATE pgm_common)

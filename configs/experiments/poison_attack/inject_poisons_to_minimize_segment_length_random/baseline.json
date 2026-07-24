@@ -1,0 +1,143 @@
+{
+    "name": "inject_poisons_to_minimize_segment_length_random_baseline",
+    "description": "Inject poisons (random) to minimize segment length m_opt; Seeds required; generate_poisons ignores unused --mu.",
+    "datasets": [
+        "longitudes",
+        "longlat",
+        "ycsb",
+        "books_800M",
+        "fb_200M",
+        "osm_cellids_800M",
+        "uniform_range2pow63_200M",
+        "lognormal_sigma1_range2pow63_200M",
+        "normal_mu0_sigma1_range2pow63_200M"
+    ],
+    "epsilons": [
+        16,
+        32,
+        64,
+        128
+    ],
+    "dataset_lambdas": {
+        "bench2": [
+            0,
+            757481,
+            7574812
+        ],
+        "bench3": [
+            0,
+            1089570,
+            10895704
+        ],
+        "longitudes": [
+            0,
+            2000000,
+            20000000
+        ],
+        "longlat": [
+            0,
+            2000000,
+            20000000
+        ],
+        "ycsb": [
+            0,
+            2000000,
+            20000000
+        ],
+        "books_800M": [
+            0,
+            8000000,
+            80000000
+        ],
+        "fb_200M": [
+            0,
+            2000000,
+            20000000
+        ],
+        "osm_cellids_800M": [
+            0,
+            8000000,
+            80000000
+        ],
+        "wiki_ts_200M": [
+            0,
+            2000000,
+            20000000
+        ],
+        "zipf_s1_200M": [
+            0,
+            2000000,
+            20000000
+        ],
+        "uniform_range2pow63_200M": [
+            0,
+            2000000,
+            20000000
+        ],
+        "lognormal_sigma1_range2pow63_200M": [
+            0,
+            2000000,
+            20000000
+        ],
+        "normal_mu0_sigma1_range2pow63_200M": [
+            0,
+            2000000,
+            20000000
+        ]
+    },
+    "dataset_mus": {
+        "bench2": [
+            100.0
+        ],
+        "bench3": [
+            100.0
+        ],
+        "longitudes": [
+            100.0
+        ],
+        "longlat": [
+            100.0
+        ],
+        "ycsb": [
+            100.0
+        ],
+        "books_800M": [
+            100.0
+        ],
+        "fb_200M": [
+            100.0
+        ],
+        "osm_cellids_800M": [
+            100.0
+        ],
+        "wiki_ts_200M": [
+            100.0
+        ],
+        "zipf_s1_200M": [
+            100.0
+        ],
+        "uniform_range2pow63_200M": [
+            100.0
+        ],
+        "lognormal_sigma1_range2pow63_200M": [
+            100.0
+        ],
+        "normal_mu0_sigma1_range2pow63_200M": [
+            100.0
+        ]
+    },
+    "seeds": [0],
+    "attack": {
+        "type": "inject_poisons_to_minimize_segment_length_random",
+        "method": "inject_poisons_to_minimize_segment_length_random"
+    },
+    "bound": {
+        "method": "simple"
+    },
+    "pipeline": [
+        "generate_poisons",
+        "benchmark_pgm",
+        "benchmark_fiting_tree",
+        "benchmark_radix_spline"
+    ]
+}

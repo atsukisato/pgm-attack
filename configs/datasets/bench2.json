@@ -1,0 +1,7 @@
+{
+  "name": "bench2_uint64",
+  "type": "uint64",
+  "path": "data/bench2_uint64",
+  "description": "Weblog dataset (mgbench)",
+  "allow_duplicates": true
+}

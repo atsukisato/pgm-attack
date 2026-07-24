@@ -1,0 +1,7 @@
+{
+  "description": "Facebook: 1M contiguous keys sampled from 200M (position determined by seed)",
+  "name": "fb_1M_uint64",
+  "path": "data/fb_200M_uint64",
+  "n": 1000000,
+  "type": "uint64"
+}

@@ -1,0 +1,3 @@
+add_executable(compute_upper_bound compute_upper_bound.cpp)
+target_include_directories(compute_upper_bound PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(compute_upper_bound PRIVATE pgm_common)

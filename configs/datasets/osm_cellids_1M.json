@@ -1,0 +1,7 @@
+{
+  "description": "OSM cell IDs: 1M contiguous keys sampled from 800M (position determined by seed)",
+  "name": "osm_cellids_1M_uint64",
+  "path": "data/osm_cellids_800M_uint64",
+  "n": 1000000,
+  "type": "uint64"
+}

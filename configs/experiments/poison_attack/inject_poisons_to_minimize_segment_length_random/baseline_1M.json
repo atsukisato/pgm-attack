@@ -1,0 +1,188 @@
+{
+    "name": "inject_poisons_to_minimize_segment_length_random_baseline_1M",
+    "description": "Inject poisons (random) to minimize segment length m_opt (1M dataset); Seeds required; generate_poisons does not use --mu.",
+    "datasets": [
+        "longitudes_1M",
+        "longlat_1M",
+        "ycsb_1M",
+        "books_1M",
+        "fb_1M",
+        "osm_cellids_1M",
+        "uniform_range2pow63_1M",
+        "lognormal_sigma1_range2pow63_1M",
+        "normal_mu0_sigma1_range2pow63_1M"
+    ],
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "epsilons": [
+        16,
+        32,
+        64,
+        128
+    ],
+    "dataset_lambdas": {
+        "bench2_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "bench3_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "longitudes_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "longlat_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "ycsb_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "books_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "fb_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "osm_cellids_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "wiki_ts_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "zipf_s1_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "uniform_range2pow63_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "lognormal_sigma1_range2pow63_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "normal_mu0_sigma1_range2pow63_1M": [
+            0,
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ]
+    },
+    "dataset_mus": {
+        "bench2_1M": [
+            100.0
+        ],
+        "bench3_1M": [
+            100.0
+        ],
+        "longitudes_1M": [
+            100.0
+        ],
+        "longlat_1M": [
+            100.0
+        ],
+        "ycsb_1M": [
+            100.0
+        ],
+        "books_1M": [
+            100.0
+        ],
+        "fb_1M": [
+            100.0
+        ],
+        "osm_cellids_1M": [
+            100.0
+        ],
+        "wiki_ts_1M": [
+            100.0
+        ],
+        "zipf_s1_1M": [
+            100.0
+        ],
+        "uniform_range2pow63_1M": [
+            100.0
+        ],
+        "lognormal_sigma1_range2pow63_1M": [
+            100.0
+        ],
+        "normal_mu0_sigma1_range2pow63_1M": [
+            100.0
+        ]
+    },
+    "attack": {
+        "type": "inject_poisons_to_minimize_segment_length_random",
+        "method": "inject_poisons_to_minimize_segment_length_random"
+    },
+    "bound": {
+        "method": "simple"
+    },
+    "pipeline": [
+        "generate_poisons",
+        "benchmark_pgm",
+        "benchmark_fiting_tree",
+        "benchmark_radix_spline"
+    ]
+}

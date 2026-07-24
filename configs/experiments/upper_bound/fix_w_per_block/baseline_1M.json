@@ -1,0 +1,127 @@
+{
+    "name": "upper_bound_fix_w_per_block_baseline_1M",
+    "description": "Upper bound computation with fix_w_per_block method (1M dataset)",
+    "datasets": [
+        "longitudes_1M",
+        "longlat_1M",
+        "ycsb_1M",
+        "books_1M",
+        "fb_1M",
+        "osm_cellids_1M",
+        "uniform_range2pow63_1M",
+        "lognormal_sigma1_range2pow63_1M",
+        "normal_mu0_sigma1_range2pow63_1M"
+    ],
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "epsilons": [
+        16,
+        32,
+        64,
+        128
+    ],
+    "dataset_lambdas": {
+        "bench2_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "bench3_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "longitudes_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "longlat_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "ycsb_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "books_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "fb_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "osm_cellids_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "wiki_ts_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "zipf_s1_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "uniform_range2pow63_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "lognormal_sigma1_range2pow63_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ],
+        "normal_mu0_sigma1_range2pow63_1M": [
+            10000,
+            20000,
+            50000,
+            100000,
+            200000
+        ]
+    },
+    "bound": {
+        "method": "fix_w_per_block"
+    },
+    "pipeline": [
+        "compute_upper_bound"
+    ]
+}

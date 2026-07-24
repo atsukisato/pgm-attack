@@ -1,0 +1,14 @@
+# Object files
+*.o
+
+# Cmake
+CMakeFiles/
+Makefile
+*.cmake
+CMakeCache.txt
+
+#VSCode
+.vscode/
+
+#Executables
+tests

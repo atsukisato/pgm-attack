@@ -1,0 +1,7 @@
+{
+  "description": "Longitudes: 1M contiguous keys sampled from longitudes (position determined by seed)",
+  "name": "longitudes_1M_uint64",
+  "path": "data/longitudes_uint64",
+  "n": 1000000,
+  "type": "uint64"
+}

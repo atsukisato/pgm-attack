@@ -1,0 +1,6 @@
+{
+  "name": "longlat_uint64",
+  "type": "uint64",
+  "path": "data/longlat_uint64",
+  "description": "Longitudes+latitudes dataset (alex)"
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Weblog: 1M contiguous keys sampled from bench2 (position determined by seed)",
+  "name": "bench2_1M_uint64",
+  "path": "data/bench2_uint64",
+  "n": 1000000,
+  "type": "uint64",
+  "allow_duplicates": true
+}

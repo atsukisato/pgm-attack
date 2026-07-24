@@ -1,0 +1,6 @@
+{
+  "name": "fb_200M_uint64",
+  "type": "uint64",
+  "path": "data/fb_200M_uint64",
+  "description": "Facebook user IDs dataset (200M entries)"
+}

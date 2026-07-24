@@ -1,0 +1,3 @@
+add_executable(generate_poisons_maxerror generate_poisons_maxerror.cpp)
+target_include_directories(generate_poisons_maxerror PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+target_link_libraries(generate_poisons_maxerror PRIVATE pgm_common)

@@ -1,0 +1,7 @@
+{
+  "description": "Books: 1M contiguous keys sampled from 800M (position determined by seed)",
+  "name": "books_1M_uint64",
+  "path": "data/books_800M_uint64",
+  "n": 1000000,
+  "type": "uint64"
+}

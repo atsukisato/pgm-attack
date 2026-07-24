@@ -1,0 +1,81 @@
+{
+    "name": "upper_bound_fix_w_per_block_baseline",
+    "description": "Upper bound computation with fix_w_per_block method (large-scale)",
+    "datasets": [
+        "longitudes",
+        "longlat",
+        "ycsb",
+        "books_800M",
+        "fb_200M",
+        "osm_cellids_800M",
+        "uniform_range2pow63_200M",
+        "lognormal_sigma1_range2pow63_200M",
+        "normal_mu0_sigma1_range2pow63_200M"
+    ],
+    "epsilons": [
+        16,
+        32,
+        64,
+        128
+    ],
+    "dataset_lambdas": {
+        "bench2": [
+            757481,
+            7574812
+        ],
+        "bench3": [
+            1089570,
+            10895704
+        ],
+        "longitudes": [
+            2000000,
+            20000000
+        ],
+        "longlat": [
+            2000000,
+            20000000
+        ],
+        "ycsb": [
+            2000000,
+            20000000
+        ],
+        "books_800M": [
+            8000000,
+            80000000
+        ],
+        "fb_200M": [
+            2000000,
+            20000000
+        ],
+        "osm_cellids_800M": [
+            8000000,
+            80000000
+        ],
+        "wiki_ts_200M": [
+            2000000,
+            20000000
+        ],
+        "zipf_s1_200M": [
+            2000000,
+            20000000
+        ],
+        "uniform_range2pow63_200M": [
+            2000000,
+            20000000
+        ],
+        "lognormal_sigma1_range2pow63_200M": [
+            2000000,
+            20000000
+        ],
+        "normal_mu0_sigma1_range2pow63_200M": [
+            2000000,
+            20000000
+        ]
+    },
+    "bound": {
+        "method": "fix_w_per_block"
+    },
+    "pipeline": [
+        "compute_upper_bound"
+    ]
+}

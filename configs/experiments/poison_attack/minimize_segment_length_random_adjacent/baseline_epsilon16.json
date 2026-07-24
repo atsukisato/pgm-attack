@@ -1,0 +1,65 @@
+{
+    "name": "minimize_segment_length_random_adjacent_baseline_epsilon16",
+    "description": "Minimize segment length random adjacent attack baseline (epsilon=16)",
+    "datasets": [
+        "longitudes",
+        "longlat",
+        "ycsb",
+        "books_800M",
+        "fb_200M",
+        "osm_cellids_800M",
+        "uniform_range2pow63_200M",
+        "lognormal_sigma1_range2pow63_200M",
+        "normal_mu0_sigma1_range2pow63_200M",
+        "bench2",
+        "bench3",
+        "wiki_ts_200M",
+        "zipf_s1_200M"
+    ],
+    "epsilons": [
+        16
+    ],
+    "lambda_per_segments": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48
+    ],
+    "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+    ],
+    "attack": {
+        "type": "minimize_segment_length_random_adjacent",
+        "method": "minimize_segment_length_random_adjacent"
+    },
+    "pipeline": [
+        "generate_poisons"
+    ]
+}

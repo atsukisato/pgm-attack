@@ -1,0 +1,8 @@
+{
+  "description": "Wikipedia timestamps: 1M contiguous keys sampled from 200M (position determined by seed)",
+  "name": "wiki_ts_1M_uint64",
+  "path": "data/wiki_ts_200M_uint64",
+  "n": 1000000,
+  "type": "uint64",
+  "allow_duplicates": true
+}

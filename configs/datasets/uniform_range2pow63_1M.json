@@ -1,0 +1,7 @@
+{
+  "description": "Uniform [0, 9223372036854775808) (1000000 entries sampled from 200M, position determined by seed)",
+  "name": "uniform_range2pow63_1M_uint64",
+  "path": "data/uniform_range2pow63_200M_uint64",
+  "n": 1000000,
+  "type": "uint64"
+}

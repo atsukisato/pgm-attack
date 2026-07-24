@@ -1,0 +1,6 @@
+{
+  "name": "books_800M_uint64",
+  "type": "uint64",
+  "path": "data/books_800M_uint64",
+  "description": "Books dataset (800M entries)"
+}

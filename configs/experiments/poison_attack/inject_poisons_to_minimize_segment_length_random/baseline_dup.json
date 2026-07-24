@@ -1,0 +1,66 @@
+{
+    "name": "inject_poisons_to_minimize_segment_length_random_baseline_dup",
+    "description": "Inject poisons (random) to minimize segment length m_opt (duplicate-key workloads only: bench2, bench3, wiki_ts_200M, zipf_s1_200M). Seeds required; generate_poisons ignores unused --mu.",
+    "datasets": [
+        "bench2",
+        "bench3",
+        "wiki_ts_200M",
+        "zipf_s1_200M"
+    ],
+    "epsilons": [
+        16,
+        32,
+        64,
+        128
+    ],
+    "dataset_lambdas": {
+        "bench2": [
+            0,
+            757481,
+            7574812
+        ],
+        "bench3": [
+            0,
+            1089570,
+            10895704
+        ],
+        "wiki_ts_200M": [
+            0,
+            2000000,
+            20000000
+        ],
+        "zipf_s1_200M": [
+            0,
+            2000000,
+            20000000
+        ]
+    },
+    "dataset_mus": {
+        "bench2": [
+            100.0
+        ],
+        "bench3": [
+            100.0
+        ],
+        "wiki_ts_200M": [
+            100.0
+        ],
+        "zipf_s1_200M": [
+            100.0
+        ]
+    },
+    "seeds": [0],
+    "attack": {
+        "type": "inject_poisons_to_minimize_segment_length_random",
+        "method": "inject_poisons_to_minimize_segment_length_random"
+    },
+    "bound": {
+        "method": "simple"
+    },
+    "pipeline": [
+        "generate_poisons",
+        "benchmark_pgm",
+        "benchmark_fiting_tree",
+        "benchmark_radix_spline"
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "description": "YCSB: 1M contiguous keys sampled from ycsb (position determined by seed)",
+  "name": "ycsb_1M_uint64",
+  "path": "data/ycsb_uint64",
+  "n": 1000000,
+  "type": "uint64"
+}
