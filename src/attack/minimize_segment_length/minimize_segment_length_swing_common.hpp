@@ -27,10 +27,6 @@ struct SkipSetStepper {
     explicit SkipSetStepper(std::vector<uint64_t> forbidden) : k(std::move(forbidden)) {
         if (!std::is_sorted(k.begin(), k.end()))
             throw std::invalid_argument("k must be sorted");
-        // for (size_t i = 1; i < k.size(); ++i) {
-        //     if (k[i] <= k[i - 1])
-        //         throw std::invalid_argument("k must be strictly increasing (all distinct)");
-        // }
 
         const size_t n = k.size();
         pref.assign(n, 0);
@@ -443,19 +439,6 @@ inline std::vector<uint64_t> compute_consecutive_multiple_poisons_minimize_segme
                     max_segment_end_index_in_original_keys = best_v;
                 }
 
-                // size_t max_segment_end_index_in_original_keys_2 = 0;
-                // for (size_t c = 0; c < C; ++c) {
-                //     size_t v = eval_right(c);
-                //     if (v > max_segment_end_index_in_original_keys_2) {
-                //         max_segment_end_index_in_original_keys_2 = v;
-                //     }
-                // }
-                // if (max_segment_end_index_in_original_keys_2 != max_segment_end_index_in_original_keys) {
-                //     std::cout << "max_segment_end_index_in_original_keys: " << max_segment_end_index_in_original_keys << std::endl;
-                //     std::cout << "max_segment_end_index_in_original_keys_2: " << max_segment_end_index_in_original_keys_2 << std::endl;
-                //     throw std::runtime_error("max_segment_end_index_in_original_keys != max_segment_end_index_in_original_keys_2");
-                // }
-
                 if (max_segment_end_index_in_original_keys < best_seg) {
                     best_seg = max_segment_end_index_in_original_keys;
                     best_is_right = true;
@@ -528,19 +511,6 @@ inline std::vector<uint64_t> compute_consecutive_multiple_poisons_minimize_segme
                     auto [_, best_v] = argmax_unimodal_on_c_indices(eval_left);
                     max_segment_end_index_in_original_keys = best_v;
                 }
-
-                // size_t max_segment_end_index_in_original_keys_2 = 0;
-                // for (size_t c = 0; c < C; ++c) {
-                //     size_t v = eval_left(c);
-                //     if (v > max_segment_end_index_in_original_keys_2) {
-                //         max_segment_end_index_in_original_keys_2 = v;
-                //     }
-                // }
-                // if (max_segment_end_index_in_original_keys_2 != max_segment_end_index_in_original_keys) {
-                //     std::cout << "max_segment_end_index_in_original_keys: " << max_segment_end_index_in_original_keys << std::endl;
-                //     std::cout << "max_segment_end_index_in_original_keys_2: " << max_segment_end_index_in_original_keys_2 << std::endl;
-                //     throw std::runtime_error("max_segment_end_index_in_original_keys != max_segment_end_index_in_original_keys_2");
-                // }
 
                 if (max_segment_end_index_in_original_keys < best_seg) {
                     best_seg = max_segment_end_index_in_original_keys;

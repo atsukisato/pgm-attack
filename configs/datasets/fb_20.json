@@ -1,6 +1,0 @@
-{
-  "description": "Facebook user IDs dataset (200M entries) (reduced to 20 entries)",
-  "name": "fb_20_uint64",
-  "path": "data/fb_20_uint64",
-  "type": "uint64"
-}
