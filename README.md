@@ -2,7 +2,7 @@
 
 ## Overview
 
-Official code for our paper, *Poisoning Attacks on PGM-index*.
+Official code for our paper, *Poisoning Attacks on the PGM-index*.
 
 ## Quick Start
 
