@@ -9,8 +9,8 @@ Official code for our paper, *Poisoning Attacks on the PGM-index*.
 ### 1. Clone and submodules
 
 ```bash
-git clone [REPOSITORY LINK]
-cd pgm-index-poisoning
+git clone https://github.com/atsukisato/pgm-attack.git
+cd pgm-attack
 git submodule update --init --recursive
 ```
 
